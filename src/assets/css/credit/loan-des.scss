@@ -1,0 +1,16 @@
+.user-container .loan-des .list, .user-container .loan-des .list >li{
+    background:#e8eaec;
+}
+.loan-des .list >li textarea{
+    background:#fff;
+    width:93%;
+    height:2.5rem;
+    padding:0.3rem 0.2rem;
+    border:0;
+    outline: none;
+}
+.loan-des .list >li textarea::placeholder{
+    font-size:0.28rem;
+    font-family: '微软雅黑';
+    color:#999;
+}

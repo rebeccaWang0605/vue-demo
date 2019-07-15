@@ -1,0 +1,145 @@
+<template>
+    <div class="detail-page">
+        <web-header :title="mainTitle" :show-return="true"  :show-save="false" />
+        <div class="detail-con">
+            <dl class="detail-list">
+                <dt>查询编号：123456787</dt>
+                <dd>
+                    <span>发放机构</span>
+                    中国银行资阳支行
+                </dd>
+                <dd>
+                    <span>发放日期</span>
+                    2012-05-28
+                </dd>
+                <dd>
+                    <span>发放金额</span>
+                    330000
+                </dd>
+                <dd>
+                    <span>账户类型</span>
+                    人民币
+                </dd>
+                <dd>
+                    <span>贷款类型</span>
+                    个人住房贷款
+                </dd>
+                <dd>
+                    <span>到期日期</span>
+                    2022-05-28
+                </dd>
+                <dd>
+                    <span>截止日期</span>
+                    2015-04-01
+                </dd>
+                <dd>
+                    <span>是否逾期</span>
+                    否
+                </dd>
+                <dd>
+                    <span>余额</span>
+                    257357
+                </dd>
+                <dd>
+                    <span>近五年内逾期数</span>
+                    0
+                </dd>
+                <dd>
+                    <span>近五年内逾期超过90天数</span>
+                    0
+                </dd>
+                <dd>
+                    <span>结清日期</span>
+                </dd>
+                <dd>
+                    <span>逾期金额</span>
+                </dd>
+                <dd>
+                    <span>状态</span>
+                </dd>
+                <dd>
+                    <span>状态发生时间</span>
+                </dd>
+            </dl>
+            <dl class="detail-list">
+                <dt>查询编号：123456787</dt>
+                <dd>
+                    <span>发放机构</span>
+                    中国银行资阳支行
+                </dd>
+                <dd>
+                    <span>发放日期</span>
+                    2012-05-28
+                </dd>
+                <dd>
+                    <span>发放金额</span>
+                    330000
+                </dd>
+                <dd>
+                    <span>账户类型</span>
+                    人民币
+                </dd>
+                <dd>
+                    <span>贷款类型</span>
+                    个人住房贷款
+                </dd>
+                <dd>
+                    <span>到期日期</span>
+                    2022-05-28
+                </dd>
+                <dd>
+                    <span>截止日期</span>
+                    2015-04-01
+                </dd>
+                <dd>
+                    <span>是否逾期</span>
+                    否
+                </dd>
+                <dd>
+                    <span>余额</span>
+                    257357
+                </dd>
+                <dd>
+                    <span>近五年内逾期数</span>
+                    0
+                </dd>
+                <dd>
+                    <span>近五年内逾期超过90天数</span>
+                    0
+                </dd>
+                <dd>
+                    <span>结清日期</span>
+                </dd>
+                <dd>
+                    <span>逾期金额</span>
+                </dd>
+                <dd>
+                    <span>状态</span>
+                </dd>
+                <dd>
+                    <span>状态发生时间</span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</template>
+
+
+<script>
+import WebHeader from "@/components/default/WebHeader"
+export default {
+    components:{
+        WebHeader,
+    },
+    data(){
+        return{
+            mainTitle:'征信报告详情',
+        }    
+    },
+}
+</script>
+
+
+<style lang="scss">
+    @import "@/assets/css/credit/detail.scss"
+</style>

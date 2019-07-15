@@ -1,0 +1,27 @@
+.agree-page{
+    margin-top:1.045rem;
+    background:#fff;
+    .agree-content{
+        padding:0 0.2rem 0.5rem;
+        text-indent:0.56rem;
+        color:#333;
+        h2{
+            margin:0;
+            padding-top:0.4rem;
+            text-align: center;
+            font-size:0.36rem;
+        }
+        p{
+            font-size:0.26rem;
+            &.bold{
+                font-weight:600;
+            }
+        }
+        ul{
+            >li{
+                font-size:0.24rem;
+            }
+        }
+    }
+   
+}

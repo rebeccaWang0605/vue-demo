@@ -1,0 +1,43 @@
+.list-con{
+    margin-top:1.045rem;
+    .list-record{
+        background:#fff;
+        color:#333;
+        box-shadow:0 0 0.1rem rgba(0,0,0,0.1);
+        >dt{
+            padding:0.2rem 0.3rem;
+            position:relative;
+            font-size:0.36rem;
+            >span{
+                position:absolute;
+                right:0.3rem;
+                top:50%;
+                transform:translateY(-50%);
+                font-size:0.3rem;
+                color:#3297fd;
+                &.no-record{
+                    color:#999;
+                }
+            }
+        }
+        >dd{
+            position: relative;
+            background:#f1f3f4;
+            margin:0;
+            margin-top:0.1rem;
+            padding:0.25rem 0.3rem 0.25rem 1.3rem;
+            font-size:0.28rem;
+            color:#333;
+            &::before{
+                position:absolute;
+                color: #50a621;
+                left:0.3rem;
+                top:50%;
+                transform:translateY(-50%);
+                content: "\E6EF";
+                font-size:0.6rem;
+                display:inline-block;
+            }
+        }
+    }
+}

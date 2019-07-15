@@ -1,0 +1,104 @@
+.login.register{
+    margin-top:1.045rem;
+    .list.register-step{
+        margin-top:0.2rem;
+        >li{
+            label{
+                width:1.6rem;
+                font-size:0.3rem;
+                color:#333;
+                &::before{
+                    content:"";  
+                }
+            }
+            input{
+                font-size:0.3rem;
+            }
+            .ipt-ver{
+                margin-right:0;
+                width:3.1rem;
+            }
+            >span{
+                display:inline-block;
+                width:2rem;
+                color:#fff;
+                background: #3297fd;
+                border-radius:0.1rem;
+                text-align:center;
+                padding:0.15rem 0;
+                font-size:0.3rem;
+                &.miao{
+                    background:#ccc;
+                }
+            }
+        }
+    }
+}
+.step{
+    margin-bottom:0.2rem;
+    .step-list{
+        background:#fff;
+        padding:0.2rem 0.3rem;
+        display:flex;
+        justify-content:space-between;
+        >li{
+            text-align:center;
+            &.active{
+                >i{
+                    background: #ff9500;
+                    &::before,&::after{
+                        background:#ff9500;
+                    }
+                }
+            }
+            &:nth-child(1){
+                >i{
+                    &::before{
+                        width:0;
+                    }
+                }
+            }
+            &:nth-child(3){
+                >i{
+                    &::after{
+                        width:0;
+                    }
+                }
+            }
+            >i{
+                position:relative;
+                display:inline-block;
+                font-size:0.4rem;
+                text-align:center;
+                width:1rem;
+                height:1rem;
+                color:#fff;
+                font-style:normal;
+                background: #ccc;
+                border-radius:50%;
+                line-height:1rem;
+                &::before,&::after{
+                    content:'';
+                    position:absolute;
+                    top:50%;
+                    left:-1rem;
+                    transform:translateY(-50%);
+                    width:1rem;
+                    height:0.1rem;
+                    background:#ccc;
+                }
+                &::after{
+                    left:1rem;
+                }
+            }
+            >span{
+                display:block;
+                color:#333;
+                font-size:0.28rem;
+                margin-top:0.1rem;
+            }
+            
+            
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.scan-container{
+    background:#fff;
+    height:100vh;
+    position:relative;
+    .scan-content{
+        margin-top:1.045rem;
+        >h3,>p{
+            margin:0;
+            padding:0.2rem 0.3rem;
+            font-size:0.32rem;
+            font-weight:400;
+            color:#333;
+        }
+        button{
+            background:#3297fd;
+            color:#fff;
+            border:none;
+            outline:none;
+            width:7rem;
+            font-size:0.40rem;
+            padding:0.1rem 0;
+            border-radius:0.1rem;
+            display:block;
+            margin:0.5rem auto;
+        }
+    }
+    .tips{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding:0.5rem 0.4rem;
+        color:#fff;
+        border-radius:0.3rem;
+        background:rgba(0,0,0,0.8);
+    }
+}

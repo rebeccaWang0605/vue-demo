@@ -1,0 +1,34 @@
+.water.user-container{
+    margin-top:1.3rem;
+    .notify{
+        font-size:0.26rem;
+        display:block;
+        padding:0.06rem 0.1rem;
+        background: #b8b8b8;
+        color:#fff;
+        border-radius:0.06rem;
+        position:relative;
+        margin-bottom:0.2rem;
+        &::before{
+            content:'';
+            position:absolute;
+            top:-0.16rem;
+            left:0.2rem;
+            border:0.08rem solid;
+            border-color:transparent transparent #b8b8b8 transparent;
+        }   
+    } 
+    .forget{
+        font-size:0.26rem;
+        display:block;
+        margin-left:30%;
+        margin-bottom:0.2rem;
+        color:#ccc;
+    }
+
+    #bank-ver{
+        width:40%!important;
+    }
+    
+     
+}

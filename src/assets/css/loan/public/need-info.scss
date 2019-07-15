@@ -1,0 +1,40 @@
+.product-point{
+    margin-top:0.2rem;
+    .product{
+        margin:0;
+        background:#fff;
+        color:#333;
+        font-size:0.30rem;
+        .product-intro{
+            padding:0.2rem;
+            position:relative;
+            font-weight:700;
+            display:flex;
+            justify-content:space-between;
+            &::after{
+                content:'';
+                position:absolute;
+                bottom:0;
+                left:0;
+                width:100%;
+                height:1px;
+                background:#ccc;
+                transform:scaleY(0.5)
+            }
+
+        }
+        .info{
+            margin:0;
+            padding:0.2rem 0.2rem 0;
+            display:flex;
+            justify-content: space-between;
+            &:nth-last-of-type(1){
+                padding-bottom:0.2rem;
+            }
+            >p{
+                line-height:0.45rem;
+                margin:0;
+            }
+        }
+    }
+}

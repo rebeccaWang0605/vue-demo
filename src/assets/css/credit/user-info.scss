@@ -1,0 +1,196 @@
+.user-container{
+    position:relative;
+    .person-icon{
+        &::before{
+            content: "\E60B";
+            font-size:0.55rem;
+        }
+    }
+    .user-content{
+        margin-top:1.045rem;
+        color:#666;
+        >p{
+            margin:0;
+            padding:0.2rem 0.3rem;
+            font-size:0.28rem;
+        }
+        >h3{
+            margin:0;
+            padding:0.2rem 0.3rem;
+            font-size:0.30rem;
+            font-weight:400;
+        }
+        .id-photo{
+            height:2.47rem;
+            padding:0.2rem 0.3rem;
+            display:flex;
+            justify-content:space-between;
+            .idd{
+                width:48%;
+                background:#fff;
+                position:relative;
+                &::before{
+                    position:absolute;
+                    content:"\E69B";
+                    top:0.03rem;
+                    left:0.11rem;
+                    font-size:2.4rem;
+                    color: #e8eaec;
+                }
+                &.front{
+                    &::before{
+                        content:"\E69A";
+                    }
+                }
+                &.active{
+                    &::before{
+                        content:''
+                    }
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .icon{
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    width:1.3rem;
+                    height:1.3rem;
+                    background:#3297fd;
+                    border-radius:50%;
+                    color:#fff;
+                    text-align: center;
+                    font-size:0.28rem;
+                    &::before{
+                        content:"\E60F";
+                        display:block;
+                        font-size:0.7rem;
+                    }
+                }
+            }
+        }
+        .list{
+            background:#fff;
+            padding:0 0.3rem;
+            color:#333;
+            >li{
+                position:relative;
+                border-bottom:1px solid #e5e5e5;
+                font-size:0;
+                &.pad{
+                    font-size:0.30rem;
+                    height:0.9rem;
+                    line-height:0.9rem;
+                    >span{
+                        color:#f00;
+                    }
+                }
+                &:nth-last-of-type(1){
+                    border-bottom:none;
+                }
+                &.has-arrow{
+                    &::after{
+                        position:absolute;
+                        right:0;
+                        top:0;
+                        content:'\E61D';
+                        font-size:0.36rem;
+                        height:0.9rem;
+                        color:#a0a0a0;
+                        line-height:0.9rem;
+                    }
+                }
+                .info{
+                    display:inline-block;
+                    width:30%;
+                    height:0.9rem;
+                    font-size:0.30rem;
+                    vertical-align: top;
+                    line-height:0.9rem;
+                }
+                >input{
+                    width:64%;
+                    border:none;
+                    outline:none;
+                    font-size:0.30rem;
+                    padding:0;
+                    color:#333;
+                    line-height:0.9rem;
+                    vertical-align: middle;
+                    &::placeholder{
+                       color: #ccc;
+                    }
+                }
+                .select-con{
+                    display:inline-block;
+                    width:64%;
+                    height:0.9rem;
+                    line-height:0.9rem;
+                    font-size:0.32rem;
+                }
+                .select-hide{
+                    font-size:0.3rem;
+                    text-align:center;
+                    border:1px solid rgb(214, 172, 57);
+                    // display:none;
+                    >span{
+                        display:block;
+                        height:0.7rem;
+                        line-height:0.7rem;
+                        .active{
+                            background: rgb(188, 233, 246);
+                            color:#fff;
+                        }
+                    }
+                }
+                #time{
+                    font-family:'微软雅黑'
+                }
+                
+            }
+        }
+        button{
+            background:#3297fd;
+            color:#fff;
+            border:none;
+            outline:none;
+            width:7rem;
+            font-size:0.40rem;
+            padding:0.1rem 0;
+            border-radius:0.1rem;
+            display:block;
+            margin:0.5rem auto 0;
+        }
+    }
+    .agree{
+        font-size:0.28rem;
+        margin-top:0.2rem;
+        text-align:center;
+        font-weight:700;
+        color:#666;
+        &::before{
+            content:'\E16B';
+            color:#3297fd;
+        }
+        &.active{
+            &::before{
+                content:'\E16A'; 
+            }
+        }
+        >span{
+            color:#3297fd;
+        }
+    }
+    .tips{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding:0.5rem 0.4rem;
+        color:#fff;
+        border-radius:0.3rem;
+        background:rgba(0,0,0,0.8);
+    }
+}

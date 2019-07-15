@@ -1,0 +1,161 @@
+.mobile-container{
+    height:100vh;
+    position:relative;
+    padding-top:1.045rem;
+    box-sizing: border-box;
+    .mobile-content{
+        .img-icon{
+            padding:0.3rem;
+            text-align: center;
+            &::before{
+                content:"\E60A";
+                font-size:2.1rem;
+                color:#3297fd;
+            }
+        }
+        .mobile-info{
+            background:#fff;
+            padding:0 0.3rem;
+            >li{
+                padding:0.3rem 0;
+                position:relative;
+                &.has-border{
+                    &::after{
+                        position:absolute;
+                        bottom:0;
+                        left:0;
+                        content:'';
+                        width:100%;
+                        height:1px;
+                        background:#ccc;
+                        transform:scaleY(0.5);
+                    }
+                }
+                >input{
+                    border:none;
+                    outline:none;
+                    font-size:0.30rem;
+                }
+            }
+        }
+        button{
+            background:#3297fd;
+            color:#fff;
+            border:none;
+            outline:none;
+            width:7rem;
+            font-size:0.40rem;
+            padding:0.1rem 0;
+            border-radius:0.1rem;
+            display:block;
+            margin:0.5rem auto 0.2rem;
+        }
+        >p{
+            font-size:0.28rem;
+            color:#666;
+            padding:0 0.3rem;
+            >span{
+                color:#3297fd;
+                text-decoration: underline;
+            }
+        }
+    }
+    .tips{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding:0.5rem 0.4rem;
+        color:#fff;
+        border-radius:0.3rem;
+        background:rgba(0,0,0,0.8);
+        z-index:100001;
+    }
+    .mask{
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background:rgba(0,0,0,0.6);
+        z-index:10000;
+        .model{
+            position:absolute;
+            top:40%;
+            left:50%;
+            transform:translateX(-50%);
+            background:#fff;
+            width:5.5rem;
+            border-radius:0.1rem;
+            h4{
+                padding:0 0.3rem;
+                color:#999; 
+                margin-bottom:0.2rem;   
+            }
+            .ipt{
+                padding: 0 0.3rem;
+                margin-bottom:0.2rem;
+                >input{
+                    width:55%;
+                    height:0.9rem;
+                    padding-left:0.2rem;
+                    border:1px solid #ddd;
+                    outline:none;
+                    border-radius:0.1rem;
+                    &::placeholder{
+                        color:#ddd;
+                    }
+                }
+                >button{
+                    width:35%;
+                    height:0.9rem;
+                    border:none;
+                    background:#ccc;
+                    color:#fff;
+                    border-radius:0.1rem;
+                    &.active{
+                        background:#3297fd;
+                    }
+                }
+            }
+            .confirm{
+                position:relative;
+                font-size:0;
+                &::before{
+                    content:'';
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:1px;
+                    background:#ccc;
+                    transform:scaleY(0.5);
+                }
+                >span{
+                    display:inline-block;
+                    font-size:0.32rem;
+                    text-align:center;
+                    width:50%;
+                    padding:0.2rem 0;
+                    color:#3297fd;
+                    position:relative;
+                    &:nth-child(1){
+                        &::after{
+                            content:'';
+                            position:absolute;
+                            right:0;
+                            top:0;
+                            width:1px;
+                            height:100%;
+                            background:#ccc;
+                            transform:scaleX(0.5);
+                        }
+                    }
+                    &:nth-child(2){
+                        font-weight:700;
+                    }
+                }
+            }
+        }
+    }
+}

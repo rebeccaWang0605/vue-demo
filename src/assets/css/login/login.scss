@@ -1,0 +1,103 @@
+.login-page{
+    height:100vh;
+    background:#fff;
+    box-sizing:border-box;
+    padding-top:1.045rem;
+    .login-page-content{
+        padding-top:0.5rem;
+        .img{
+            width:2.2rem;
+            height:3.5rem;
+            margin:0 auto;
+            background:url(https://jingjingke.github.io/vuePro-demo/dist/static/img/logoImg.f58bb1d.png) 0 0 no-repeat;
+            background-color:#fff;
+            background-size:100%;
+            text-align: center;
+            line-height:3.5rem;
+            text-indent: -1111em;
+        }
+        .list{
+            padding:0 0.3rem;
+            >li{
+                padding:0.25rem 0;
+                position:relative;
+                display:flex;
+                &::after{
+                    content:'';
+                    position:absolute;
+                    bottom:0;
+                    left:0;
+                    background:#ccc;
+                    width:100%;
+                    height:1px;
+                    transform:scaleY(0.5);
+                }
+                >label{
+                    flex:0 0 1.8rem;
+                    color:#333;
+                    font-size:0.3rem;
+                }
+                >input{
+                    width:50%;
+                    color:#333;
+                    border:none;
+                    outline:none;
+                    &::placeholder{
+                        color:#ccc;
+                    }
+                }
+                .re-input{
+                    position:absolute;
+                    right:0;
+                    top:50%;
+                    transform:translateY(-50%);
+                    color:#ccc;
+                    font-size:0.28rem;
+                    &::before{
+                        content: "\E642";
+                    }
+                }
+                .open-eye,.close-eye{
+                    position:absolute;
+                    right:0;
+                    top:50%;
+                    color:#ccc;
+                    transform:translateY(-50%);
+                    font-size:0.36rem;
+                }
+                .open-eye{
+                    &::before{
+                        content: "\E61B";
+                    }
+                }
+                .close-eye{
+                    font-size:0.28rem;
+                    &::before{
+                        content: "\E669";
+                    }
+                }
+                
+            }
+        }
+        button{
+            display:block;
+            width:94%;
+            margin:0 auto;
+            padding:0.15rem 0;
+            background-color: #3297fd;
+            color:#fff;
+            border:none;
+            margin-top:0.3rem;
+            border-radius:0.1rem;
+            font-size:0.36rem;
+            outline:none;
+        }
+        .reg-for{
+            padding:0 0.3rem;
+            display:flex;
+            justify-content: space-between;
+            color:#666;
+            font-size:0.28rem;
+        }
+    }
+}

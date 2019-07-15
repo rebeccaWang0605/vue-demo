@@ -1,0 +1,85 @@
+.bank-sms{
+    .bank-sms-content{
+        margin-top:1.045rem;
+        >P{
+            padding:0.2rem;
+            color:#666;
+            font-size:0.30rem;
+            margin:0;
+        }
+        .verify-content{
+            background:#fff;
+            font-size:0;
+            label{
+                width:65%;
+                position:relative;
+                display:inline-block;
+                height:0.9rem;
+                line-height:0.9rem;
+                vertical-align: top;
+                color:#333;
+                >span{
+                    width:35%;
+                    font-size:0.32rem;
+                    padding-left:0.2rem;
+                    display:inline-block;
+                }
+                &::after{
+                    content:'';
+                    position:absolute;
+                    right:0;
+                    top:50%;
+                    height:80%;
+                    width:1px;
+                    background:#ccc;
+                    transform:scaleX(0.5) translateY(-50%);
+                }
+                >input{
+                    width:55%;
+                    border:none;
+                    height:0.9rem;
+                    outline:none;
+                    color:#333;
+                    font-size:0.30rem;
+                    padding:0 0.2rem;
+                    box-sizing: border-box;
+                    &::placeholder{
+                        color:#ccc;
+                    }
+                }
+            }
+            >span{
+                width:35%;
+                height:0.9rem;
+                line-height:0.9rem;
+                text-align:center;
+                vertical-align: top;
+                display:inline-block;
+                font-size:0.30rem;
+                color: #666;
+            }
+        }
+        button{
+            background:#3297fd;
+            color:#fff;
+            border:none;
+            outline:none;
+            width:7rem;
+            font-size:0.40rem;
+            padding:0.1rem 0;
+            border-radius:0.1rem;
+            display:block;
+            margin:0.5rem auto;
+        }
+    }
+    .tips{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding:0.5rem 0.4rem;
+        color:#fff;
+        border-radius:0.3rem;
+        background:rgba(0,0,0,0.8);
+    }
+}

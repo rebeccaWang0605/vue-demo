@@ -1,0 +1,32 @@
+.zhima{
+    height:100vh;
+    background:#fff;
+    .zhima-info{
+        margin-top:1.045rem;
+        p{
+            margin:0;
+            padding:2rem 0;
+            text-align:center;
+            font-size:0.36rem;
+            color:#838b93;
+            &::before{
+                content:'\E715';
+                font-size:1.8rem;
+                display:block;
+                color:#c8ccd0;
+            }
+        }
+        button{
+            background:#3297fd;
+            color:#fff;
+            border:none;
+            outline:none;
+            width:7rem;
+            font-size:0.40rem;
+            padding:0.1rem 0;
+            border-radius:0.1rem;
+            display:block;
+            margin:0.5rem auto;
+        }
+    }
+}

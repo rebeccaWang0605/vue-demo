@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'myFont';
+    src:url('./icons.eot'),
+        url('./icons.otf'),
+        url('./icons.svg'),
+        url('./icons.ttf'),
+        url('./icons.woff')
+}

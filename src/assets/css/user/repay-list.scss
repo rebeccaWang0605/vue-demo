@@ -1,0 +1,26 @@
+.my-repay{
+    .my-repay-list{
+        margin-top:1.3rem;
+        background:#fff;
+        padding:0.2rem 0;
+        >li{
+            display:flex;
+            justify-content: space-between;
+            padding:0.1rem 0.3rem;
+            color:#666;
+            >span{
+                &.bold{
+                    font-weight:bold;
+                    color:#000;
+                }
+            }
+        }
+    }
+    .repay-btn{
+        background-color: #3297fd;
+        color:#fff;
+        text-align: center;
+        padding:0.2rem;
+        font-size:0.36rem;
+    }
+}

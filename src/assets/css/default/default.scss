@@ -1,0 +1,26 @@
+.page{
+    .web-header{
+        position:fixed;
+        top:0;
+        width:7.5rem;
+        height:1.045rem;
+        text-align:center;
+        background-color: #3297fd;
+        z-index:1000;
+    }
+    .web-content{
+        width:7.5rem;
+        // height:1000px;
+        background:fff;
+        margin-top:1.045rem;
+    }
+    .web-footer{
+        position:fixed;
+        bottom:0;
+        width:7.5rem;
+        height:1.045rem;
+        line-height:1.045rem;
+        background:#e3e3e3;
+        z-index:1000;
+    }
+}

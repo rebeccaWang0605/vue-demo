@@ -1,0 +1,27 @@
+.header{
+    line-height:1.045rem;
+    position:fixed;
+    top:0;
+    width:7.5rem;
+    height:1.045rem;
+    text-align:center;
+    background-color: #3297fd;
+    z-index:1000;
+    display:flex;
+    padding:0 0.4rem;
+    box-sizing:border-box;
+    >span{
+        font-size:0.32rem;
+        color:#fff;
+        &.title{
+            flex:1 1 auto;
+            font-size:0.36rem;
+            font-weight:700;
+        }
+        &.back{
+            &::before{
+                content:'\E689';
+            }
+        }
+    }
+}

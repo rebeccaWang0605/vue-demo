@@ -1,0 +1,18 @@
+.my-borrow{
+    .my-borrow-list{
+        margin-top:1.045rem;
+        background:#fff;
+        display:flex;
+        padding:0 0.4rem;
+        >li{
+            width:25%;
+            text-align:center;
+            line-height:0.9rem;
+            color:#333;
+            font-size:0.30rem;
+            &.active{
+                border-bottom:2px solid #3297fd;
+            }
+        }
+    }
+}

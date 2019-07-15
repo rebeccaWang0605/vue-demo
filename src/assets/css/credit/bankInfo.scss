@@ -1,0 +1,47 @@
+.support{
+    background:#dcf0ff;
+    color:#333;
+    .support-bank{
+        color: #3297fd;
+        text-decoration:underline;
+    }
+}
+.add-success{
+    background:#fff;
+    margin-top:1.3rem;
+    padding:0.25rem 0.3rem;
+    display:flex;
+    &::before{
+        content:'';
+        width:0.95rem;
+        height:0.95rem;
+        flex:0 0 auto;
+        background:url('https://jingjingke.github.io/vuePro-demo/dist/static/img/bankIcon.d69063b.png');
+        background-size:600%;
+        vertical-align: middle;
+        background-position: 0 0;
+        margin-right:0.2rem;
+        background-position: 100% 0;
+    }
+    >div{
+        >P{
+            margin:0;
+            display:flex;
+            justify-content: space-between;
+            font-size:0.3rem;
+            color:#333;
+            .weihao{
+                color:#666;
+            }
+            .recieve{
+                color: #3297fd;
+            }
+        }
+        .limit{
+            margin-top:0.1rem;
+            display:inline-block;
+            font-size:0.26rem;
+            color:#666;
+        }
+    }
+}

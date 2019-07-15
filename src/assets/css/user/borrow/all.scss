@@ -1,0 +1,23 @@
+.all{
+    background:#fff;
+    margin-top:0.3rem;
+    padding:0.3rem;
+    p{
+        margin:0;
+        display:flex;
+        justify-content: space-between;
+        font-size:0.28rem;
+        color:#666;
+        &.all-sno{
+            margin-bottom:0.15rem;
+            font-size:0.3rem;
+            color:#333;
+        }
+        >span{
+            >i{
+                font-style:normal;
+                color: #3297fd;
+            }
+        }   
+    }
+}

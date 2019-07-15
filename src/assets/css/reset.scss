@@ -1,0 +1,26 @@
+body{
+    width:7.5rem;
+    margin:0;
+    font-size:0.32rem;
+    background:#e8eaec;
+    font-family: myFont;
+}
+html{
+    height:100%;
+    margin:0 auto;
+}
+@media (min-width:750px){
+    html{
+        width:750px;
+    }
+}
+
+ul,li{
+    padding:0;
+    margin:0;
+    list-style:none;
+
+}
+a{
+    text-decoration: none;
+}

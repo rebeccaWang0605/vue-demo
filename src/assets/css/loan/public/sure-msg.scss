@@ -1,0 +1,203 @@
+.sure-content{
+    margin-top:1.045rem;
+    .sure-loan{
+        background:#fff;
+        font-size:0;
+        padding-bottom:0.5rem;
+        >dt{
+            padding:0.3rem 0.25rem 0.4rem;
+            display:flex;
+            color:#333;
+            font-size:0.3rem;
+            justify-content: space-between;
+            b{
+                font-weight:400;
+            }
+        }
+        >dd{
+            display:inline-block;
+            width:33.33333%;
+            margin:0;
+            padding:0 0.25rem;
+            box-sizing:border-box;
+            font-size:0.24rem;
+            text-align:center;
+            position:relative;
+            color:#666;
+            &:nth-of-type(1),&:nth-of-type(2){
+                &::after{
+                    content:'';
+                    position:absolute;
+                    top:0;
+                    right:0;
+                    width:1px;
+                    height:100%;
+                    background:#ccc;
+                    transform:scaleX(0.5);
+                }
+            }
+            .money{
+                display:block;
+                color:#f00;
+                font-size:0.4rem;
+            }
+            .help{
+                i{
+                    display:inline-block;
+                    width:15px;
+                    text-align: center;
+                    height:15px;
+                    vertical-align:middle;
+                    line-height:15px;
+                    color:#fff;
+                    background:#ccc;
+                    border-radius:0.08rem;
+                    font-style:normal;
+                }
+            }
+            
+        }
+    }
+    .more{
+        position:relative;
+        color:#333;
+        text-align: left;
+        padding:0.25rem;
+        background:#fff;
+        &::before{
+            content:'';
+            width:100%;
+            height:1px;
+            background:#ccc;
+            position:absolute;
+            top:0;
+            left:0;
+            transform:scaleY(0.5);
+        }
+        &::after{
+            content: "\E61D";
+            position:absolute;
+            right:0.25rem;
+            color:#999;
+            top:50%;
+            transform:translateY(-50%);
+        }
+    }
+    .loan-plan{
+        margin-top:0.3rem;
+        background:#fff;
+        padding:0 0.25rem;
+        >dt,>dd{
+            position:relative;
+            padding:0.25rem 0;
+            margin:0;
+            color:#333;
+            &::after{
+                position:absolute;
+                bottom:0;
+                left:0;
+                content:'';
+                width:100%;
+                height:1px;
+                background:#ccc;
+                transform:scaleY(0.5);
+            }
+        }
+        >dd{
+            font-size:0.28rem;
+            display:flex;
+            text-align:center;
+            color:#666;
+            >span{
+                width:25%;
+            }
+        }
+    }
+}
+.agree{
+    font-size:0.28rem;
+    margin-top:0.2rem;
+    text-align:center;
+    font-weight:700;
+    color:#666;
+    &::before{
+        content:'\E16B';
+        color:#3297fd;
+    }
+    &.active{
+        &::before{
+            content:'\E16A'; 
+        }
+    }
+    >span{
+        color:#3297fd;
+    }
+}
+button{
+    background:#3297fd;
+    color:#fff;
+    border:none;
+    outline:none;
+    width:7rem;
+    font-size:0.40rem;
+    padding:0.1rem 0;
+    border-radius:0.1rem;
+    display:block;
+    margin:0.5rem auto 0;
+}
+.tips{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:0.5rem 0.4rem;
+    color:#fff;
+    border-radius:0.3rem;
+    background:rgba(0,0,0,0.8);
+}
+.mask{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.6);
+    z-index:100000;
+    .sure-tips{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        background:#fff;
+        width:5.5rem;
+        border-radius:0.1rem;
+        >p{
+            padding:0 0.3rem;
+            color:#333;
+            font-size:0.34rem;
+            margin:0.25rem 0;
+            &.text-center{
+                text-align:center;
+                font-weight:bold;
+            }
+        }
+        >span{
+            position:relative;
+            display:block;
+            padding:0.25rem 0.3rem;
+            text-align:center;
+            color: #3297fd;
+            &::before{
+                content:'';
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:1px;
+                background:#ccc;
+                transform:scaleY(0.5);
+            }
+        }
+        
+    }
+}

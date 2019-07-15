@@ -1,0 +1,97 @@
+.login{
+    margin-top:1.3rem;
+    .login-content{
+        .list{
+            background:#fff;
+            padding:0 0.2rem;
+            >li{
+                position:relative;
+                &::after{
+                    position:absolute;
+                    bottom:0;
+                    left:0;
+                    content:'';
+                    width:100%;
+                    height:1px;
+                    background:#ccc;
+                    transform:scaleY(0.5);
+                }
+                label{
+                    width:0.8rem;
+                    display:inline-block;
+                    height:1.1rem;
+                    line-height:1.1rem;
+                    padding-left:0.2rem;
+                    font-size:0.5rem;
+                    color:#999;
+                }
+                &:nth-of-type(1){
+                    label{
+                        &::before{
+                            content:"\E61E";  
+                        }
+                    }
+                }
+                &:nth-of-type(2){
+                    label{
+                        &::before{
+                            content: "\E61F";  
+                        }
+                    }
+                }
+                &:nth-of-type(3){
+                    label{
+                        &::before{
+                            content: "\E61C";
+                        }
+                    }
+                }
+                
+                input{
+                    height:1.1rem;
+                    line-height:1.1rem;
+                    border:none;
+                    outline:none;
+                    color:#333;
+                    font-size:0.32rem;
+                    margin-right:0.5rem;
+                    &::placeholder{
+                        color:#ccc;
+                    }
+                    
+                }
+            }
+        }
+        button{
+            background:#3297fd;
+            color:#fff;
+            border:none;
+            outline:none;
+            width:7rem;
+            font-size:0.40rem;
+            padding:0.1rem 0;
+            border-radius:0.1rem;
+            display:block;
+            margin:0.5rem auto;
+            &:nth-of-type(2){
+                border: 1px solid #3297fd;
+                color: #3297fd;
+                background: #e4effa;
+            }
+            &.next{
+                background:#3297fd;
+                color:#fff;
+            }
+        }
+    }
+    .tips{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        padding:0.5rem 0.4rem;
+        color:#fff;
+        border-radius:0.3rem;
+        background:rgba(0,0,0,0.8);
+    }
+}

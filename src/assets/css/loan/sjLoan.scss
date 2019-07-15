@@ -1,0 +1,34 @@
+.sj-page{
+    background:#266dff;
+    .sj-img{
+        width:100%;
+        >img{
+            width:100%;
+        }
+    }
+    .sj-content{
+        width:100%;
+        padding:0.2rem 0.36rem 0.6rem;
+        box-sizing: border-box;
+        >div{
+            background:#fff;
+            border-radius:8px;
+            padding:0 0.3rem 0.2rem;
+            >h3{
+                margin:0;
+                padding:0.4rem 0;
+                font-size:0.32rem;
+            }
+            >p{
+                line-height:0.6rem;
+                margin:0;
+                font-size:0.28rem;
+                color:#333;
+                &.align{
+                    text-align:right
+                }
+            }
+        }
+        
+    }
+}

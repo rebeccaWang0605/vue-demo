@@ -1,0 +1,137 @@
+.water-bank{
+    margin-top:1.045rem;
+    margin-bottom:0.3rem;
+    .water-list{
+        padding:0 0.3rem ;
+        background:#fff;
+        >li{
+            position:relative;
+            padding:0.15rem 0;
+            font-size:0.36rem;
+            color:#333;
+            &::before{
+                content:'';
+                display:inline-block;
+                width:0.76rem;
+                height:0.76rem;
+                background:url('https://jingjingke.github.io/vuePro-demo/dist/static/img/bankIcon.d69063b.png');
+                background-size:600%;
+                vertical-align: middle;
+                background-position: 0 0;
+                margin-right:0.2rem;
+            }
+            &:nth-child(2){
+                &::before{
+                    background-position: 20% 0;
+                }
+            }
+            &:nth-child(3){
+                &::before{
+                    background-position: 40% 0;
+                }
+            }
+            &:nth-child(4){
+                &::before{
+                    background-position: 60% 0;
+                }
+            }
+            &:nth-child(5){
+                &::before{
+                    background-position: 80% 0;
+                }
+            }
+            &:nth-child(6){
+                &::before{
+                    background-position: 100% 0;
+                }
+            }
+            &:nth-child(7){
+                &::before{
+                    background-position: 0 25%;
+                }
+            }
+            &:nth-child(8){
+                &::before{
+                    background-position: 20% 25%;
+                }
+            }
+            &:nth-child(9){
+                &::before{
+                    background-position: 40% 25%;
+                }
+            }
+            &:nth-child(10){
+                &::before{
+                    background-position: 60% 25%;
+                }
+            }
+            &:nth-child(11){
+                &::before{
+                    background-position: 80% 25%;
+                }
+            }
+            &:nth-child(12){
+                &::before{
+                    background-position: 100% 25%;
+                }
+            }
+            &:nth-child(13){
+                &::before{
+                    background-position: 0 50%;
+                }
+            }
+            &:nth-child(14){
+                &::before{
+                    background-position: 20% 50%;
+                }
+            }
+            &:nth-child(15){
+                &::before{
+                    background-position: 40% 50%;
+                }
+            }
+            &:nth-child(16){
+                &::before{
+                    background-position: 60% 50%;
+                }
+            }
+            &:nth-child(17){
+                &::before{
+                    background-position: 80% 50%;
+                }
+            }
+            &:nth-child(18){
+                &::before{
+                    background-position: 100% 50%;
+                }
+            }
+            &:nth-child(19){
+                &::before{
+                    background-position: 0 75%;
+                }
+            }
+            &::after{
+                position:absolute;
+                right:0;
+                top:50%;
+                transform:translateY(-50%);
+                content:"\E61D";
+                color: #a0a0a0;
+            }
+            &:nth-last-of-type(1){
+                >span{
+                    height:0;
+                }
+            }
+            >span{
+                position:absolute;
+                bottom:0;
+                left:0;
+                width:100%;
+                height:1px;
+                background: #ccc;
+                transform:scaleY(0.5);  
+            }
+        }
+    }
+}

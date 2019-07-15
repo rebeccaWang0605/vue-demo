@@ -1,0 +1,125 @@
+.credit-detail{
+    margin-top:1.045rem;
+    .report{
+        position:relative;
+        padding:0.2rem 0.3rem;
+        background:#fff;
+        line-height:0.5rem;
+        color:#333;
+        font-size:0.30rem;
+        box-shadow:0 0 0.1rem rgba(0,0,0,0.1);
+        >p{
+            position:absolute;
+            right:0.3rem;
+            top:0;
+            margin:0.2rem 0 0;
+            color:#999;
+            text-align: right;
+            >span{
+                display:block;
+                color:#3297fd;
+                font-weight:700;
+                font-size:0.45rem;
+            }
+        }
+    }
+    .record{
+        background:#fff;
+        margin:0.2rem 0 0;
+        padding:0 0.3rem;
+        color:#333;
+        font-size:0;
+        box-shadow:0 0 0.1rem rgba(0,0,0,0.1);
+        >dt{
+            padding:0.25rem 0;
+            position:relative;
+            font-size:0.36rem;
+            &::before{
+                position:absolute;
+                bottom:0;
+                left:0;
+                content:'';
+                width:100%;
+                height:1px;
+                background:#ccc;
+                transform:scaleY(0.5);
+            }
+            &::after{
+                position:absolute;
+                top:50%;
+                transform:translateY(-50%);
+                right:0;
+                content: "\E61D";
+                color:#ccc;
+                font-size:0.4rem;
+            }
+            >span{
+                position:absolute;
+                right:0.45rem;
+                top:50%;
+                transform:translateY(-50%);
+                font-size:0.3rem;
+                color:#3297fd;
+                &.no-record{
+                    color:#999;
+                }
+            }
+        }
+        >dd{
+            margin:0;
+            display:inline-block;
+            width:20%;
+            font-size:0.24rem;
+            vertical-align: top;
+            padding:0.25rem 0;
+            text-align: center;
+            &::before{
+                content: "\E6EA";
+                font-size:0.5rem;
+                color:#999;
+                
+            }
+            &:nth-of-type(2){
+                &::before{
+                    content: "\E6EB";  
+                } 
+            }
+            &:nth-of-type(3){
+                &::before{
+                    content: "\E6EC";
+                } 
+            }
+            &:nth-of-type(4){
+                &::before{
+                    content: "\E6EE";  
+                } 
+            }
+            &:nth-of-type(5){
+                &::before{
+                    content: "\E6ED";  
+                } 
+            }
+            >span{
+                display:block;
+                white-space: nowrap;
+                overflow: hidden;
+                margin-top:0.1rem;
+                text-overflow: ellipsis;
+                &.num{
+                    color: #3297fd;
+                    font-size:0.3rem;
+                }
+                &.grey{
+                    color:#999;
+                    font-size:0.3rem;
+                }
+            }
+        }
+        &.no-margin{
+            margin:0;
+        }
+        &.mar{
+            margin-bottom:0.3rem;
+        }
+    }
+}
